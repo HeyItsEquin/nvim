@@ -24,6 +24,7 @@ end
 
 -- Line Numbers
 vim.cmd("set relativenumber")
+vim.cmd("set number")
 
 -- Force clear screen before Neovim window closes
 vim.api.nvim_create_autocmd("VimLeave", {

@@ -6,7 +6,7 @@ return {
 		auto_install = true,
 		highlight = { enable = true },
 		indent = { enable = true },
-        ensure_installed = { 'gdscript' },
+		ensure_installed = { "gdscript", "c" },
 	},
 	config = function()
 		local treesitter = require("nvim-treesitter")

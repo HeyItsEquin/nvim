@@ -25,3 +25,6 @@ vim.keymap.set("n", "<A-Right>", "<C-w>k", {})
 vim.keymap.set("n", "fa", "za", {}) -- fa doesn't exactly mean anything, but it's more comfortable to type
 vim.keymap.set("n", "fo", "zo", {})
 vim.keymap.set("n", "fc", "zc", {})
+
+-- View LSP warnings and errors fullscreen
+vim.keymap.set("n", "vd", vim.diagnostic.open_float, {})
