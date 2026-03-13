@@ -1,7 +1,10 @@
 -- Leader Key
 vim.g.mapleader = " "
 
-vim.keymap.set("i", "<C-h>", "<C-W>", {}) -- Ctrl+Backspace to delete word
+-- Ctrl+Backspace to delete word --
+vim.keymap.set("i", "<C-h>", "<C-W>", {})
+vim.keymap.set("i", "<C-BS>", "<C-W>", {})
+
 vim.keymap.set({ "i", "n" }, "<C-s>", "<cmd>w<CR>", {}) -- Ctrl+s to save current file
 
 -- Ctrl+z to undo
