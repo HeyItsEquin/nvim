@@ -4,7 +4,7 @@ return {
     config = function()
         require("lint").linters_by_ft = {
             lua = { "selene" },
-            python = { "pylint" },
+            python = { "ruff" },
             javascript = { "eslint_d" },
             c =  { "cpplint" },
             Makefile = { "checkmake" }
