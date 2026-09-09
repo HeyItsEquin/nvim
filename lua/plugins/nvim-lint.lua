@@ -6,7 +6,6 @@ return {
             lua = { "selene" },
             python = { "ruff" },
             javascript = { "eslint_d" },
-            c =  { "cpplint" },
             Makefile = { "checkmake" }
         }
 
