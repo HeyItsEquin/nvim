@@ -1,0 +1,23 @@
+return {
+    "akinsho/toggleterm.nvim",
+    config = function()
+        require("toggleterm").setup({
+            size = 10,
+            open_mapping = [[<leader>t]],
+            direction = "horizontal",
+            on_open = function(_)
+                local name = vim.fn.bufname("neo-tree")
+                local winnr = vim.fn.bufwinnr(name)
+
+                if winnr ~= -1 then
+                    vim.defer_fn(function()
+                        local cmd = string.format("Neotree toggle")
+                        vim.cmd(cmd)
+                        vim.cmd(cmd)
+                        vim.cmd("wincmd p")
+                    end, 100)
+                end
+            end,
+        })
+    end
+}
