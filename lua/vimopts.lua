@@ -8,7 +8,7 @@ vim.cmd("set shiftwidth=4")
 vim.cmd("colorscheme catppuccin")
 
 -- Transparent Background
-local transparent_bg = true
+local transparent_bg = false
 
 if transparent_bg == true then
     vim.cmd("highlight Normal ctermbg=None guibg=None")
