@@ -1,6 +1,9 @@
 -- Leader Key
 vim.g.mapleader = " "
 
+-- Open Terminal --
+vim.keymap.set("n", "<leader>t", "<cmd>ToggleTerm<CR>", {})
+
 -- Ctrl+Backspace to delete word --
 vim.keymap.set("i", "<C-h>", "<C-W>", {})
 vim.keymap.set("i", "<C-BS>", "<C-W>", {})
